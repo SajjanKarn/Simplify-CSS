@@ -14,6 +14,7 @@
   --warning: #e0bd2b;
   --error: #ba3b46;
   --dark: #080708;
+  --lead: #7f878e;
 }
 
 a {
@@ -26,7 +27,7 @@ hr {
 
 /* ---------- globals -------- */
 .container {
-  padding: 0px 30px;
+  padding: 0px 25px;
 }
 
 .mx-1 {
@@ -82,7 +83,18 @@ h6 {
   margin: 10px 0px;
 }
 
+.input-group {
+  margin: 20px 0px;
+}
+
+.modals hr {
+  margin-bottom: 20px;
+}
+
 /* ---------- header text colors --------- */
+.text-lead {
+  color: #7f878e;
+}
 .text-primary {
   color: var(--primary);
 }
@@ -292,6 +304,68 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* ---------- input -------- */
+.input-group {
+  display: block;
+}
+
+.input-group label {
+  display: block;
+  color: var(--lead);
+}
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--lead);
+  outline: none;
+}
+.form-control-subheading {
+  font-size: 0.9rem;
+  margin: 5px 0px;
+}
+
+/* ---------- modal -------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-close-btn {
+  text-align: right;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  opacity: 0.6;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+.modal-body {
+  font-weight: lighter;
 }
 
 /* ---------- navbar -------- */
