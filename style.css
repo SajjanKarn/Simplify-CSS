@@ -24,7 +24,6 @@ a {
 hr {
   border: 0.3px solid #cacec8;
 }
-
 /* ---------- globals -------- */
 .container {
   padding: 0px 25px;
@@ -89,6 +88,14 @@ h6 {
 
 .modals hr {
   margin-bottom: 20px;
+}
+
+.navbars .nav {
+  margin: 10px 0px;
+}
+
+.breadcrumb {
+  margin: 10px 0px;
 }
 
 /* ---------- header text colors --------- */
@@ -381,6 +388,37 @@ h6 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+/* ---------- breadcrumb -------- */
+
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb ol li {
+  margin: 0px 5px;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.breadcrumb ol li:hover {
+  opacity: 0.6;
+}
+
+.breadcrumb ol li::after {
+  content: "/";
+  color: var(--secondary);
+  margin: 0px 5px;
+}
+
+.breadcrumb-active {
+  color: var(--secondary) !important;
+}
+
+.breadcrumb-active::after {
+  content: "" !important;
 }
 
 /* ---------- footer -------- */
